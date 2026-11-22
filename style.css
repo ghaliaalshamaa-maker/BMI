@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+.hero {
+       width: 66%;
+    min-height: 850px;
+
+    border-radius: 0 0 35px 0;
+    background: linear-gradient(
+        290deg,
+        #D6E6FE 0%,
+        #FFFFFF 100%
+    );  
+     padding: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+}
+
+.header {
+    max-width: 500px;
+  
+    
+}
+
+.header img {
+    width: 40px;
+    margin-bottom: 150px;
+}
+
+.header h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: #253347;
+}
+
+.header p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5E6E85;
+}
+.calculator {
+    position: absolute;
+    top:50%;
+    left: 70%;
+    transform: translateY(-50%);
+     width: 90%;
+    padding: 32px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 16px 56px rgba(143, 174, 207, 0.25);
+}
+.result{
+    margin-top: 36px;
+    border-radius: 10px 100px 100px 10px;
+    padding: 30px;
+    font-size: 16px;
+     min-height: 150px;
+    color: white;
+    background: linear-gradient(90deg, #345FF6 0%, #506dd6 100%);
+}
+.result h2{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.radio-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+ .input-group {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 24px;
+    margin-top: 24px;
+}
+.radio-item {
+    display: flex;
+align-items: center;
+    gap: 12px;
+   
+}
+input[type="radio"] {
+  width: 18px;
+   accent-color: #345FF6;
+ height: 18px;
+ cursor: pointer;
+}
+.input-item {
+  position: relative;
+}
+.input-item p,.BMIMeans p {
+    font-size: 14px;
+    color: #5E6E85;
+    margin-bottom: 8px;
+}
+.input-item span {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    color: #345FF6;
+    font-weight: 800;
+}
+input[type="number"]{
+    width: 100%;
+    border: 1px solid #D8E2E7;
+    border-radius:12px;
+    padding: 16px 50px 16px 20px;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #253347;
+    outline: none;
+}
+input[type="number"]:focus {
+    border-color: #345FF6;
+}
+
+
+.BMIMeans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 40px 8%;
+    margin: 50px auto;
+    max-width: 1440px;
+}
+
+.BMIMeans .img {
+    flex: 1;
+    min-width: 0;
+}
+
+.BMIMeans img {
+    width: 100%;
+    max-width: 564px;
+    display: block;
+}
+
+.BMIMeans .text {
+    flex: 1;
+    max-width: 465px;
+}
+
+.BMIMeans h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #253347;
+}
+
+.BMIMeans p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5E6E85;
+}
+
+
+.lifeStyle {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 5%;
+    margin: 80px 0;
+    border-radius: 35px;
+    background: linear-gradient( 90deg,#FFFFFF 0%, #F0F5FF 100% );
+}
+
+.lifeStyle .card {
+    flex: 1;
+    min-width: 0;
+}
+
+.lifeStyle .card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 50px;
+}
+
+.lifeStyle .card h3 {
+    font-size: 22px;
+    color: #253347;
+    margin-bottom: 24px;
+}
+
+.lifeStyle .card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5E6E85;
+}
+
+.limitions {
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.textlimitions {
+    grid-column: 1/-1;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.textlimitions h2 {
+    font-size: 40px;
+    color: #253347;
+    margin-bottom: 24px;
+}
+
+.textlimitions p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5E6E85;
+}
+
+.limitions .card {
+width: 100%;
+min-width: 0;
+ height: auto;
+    padding: 32px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 16px 24px 56px rgba(143, 174, 207, 0.16);
+
+}
+
+.limitions .card img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.limitions .card h3 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #253347;
+}
+
+.limitions .card p {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    color: #5E6E85;
+}
+
+
+
+
